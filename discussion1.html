@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion 1</title>
+</head>
+
+<body style="height: 100%; display:flex; flex-direction: column;">
+    <header>
+        <h1>Discussion 1 Page</h1>
+    </header>
+    <nav style="display: grid; grid-template-columns: repeat(2, auto); gap: 8px;">
+        <button id="alert1">Show Alert 1</button>
+        <button id="alert2">Show Alert 2</button>
+    </nav>
+
+    <main
+        style="flex: 1; display: grid; grid-template-columns: 3fr 1fr; gap: 16px; margin-top: 16px; border: 1px solid #ccc;  min-height: calc(100vh - 200px);">
+        <section style="padding-left: 8px;">
+            <h2>Welcome to Discussion 1</h2>
+            <p>This is the first discussion page for the STSI4209 course.</p>
+        </section>
+        <aside style="border-left: 1px solid #ccc; padding-left: 8px;">
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2024 STSI4209 Course</p>
+    </footer>
+</body>
+<script>
+    document.getElementById('alert1').addEventListener('click', function () {
+        alert('This is Alert 1!');
+    });
+    document.getElementById('alert2').addEventListener('click', function () {
+        alert('This is Alert 2!');
+    });
+</script>
+
+</html>

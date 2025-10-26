@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Selamat Datang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main-login">
+        <section class="login-container">
+            <header>
+                <h1 class="greeting">Selamat Datang</h1>
+            </header>
+
+            <form action="#" class="login-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fa-solid fa-key"></i>
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="modal-btn" id="forgotPasswordBtn">
+                        Lupa password?
+                    </button>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Masuk
+                </button>
+            </form>
+
+            <footer class="form-footer">
+                <button type="button" class="modal-btn" id="signupBtn">
+                    Belum punya akun?
+                </button>
+            </footer>
+        </section>
+    </main>
+
+    <dialog id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Lupa Password</h2>
+                <button type="button" class="close-modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+            <form class="modal-form">
+                <p>Masukkan email Anda untuk reset password</p>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Kirim Link Reset</button>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog id="signupModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Daftar Akun Baru</h2>
+                <button type="button" class="close-modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+            <form class="modal-form">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* Tracking Page Styles */
+.tracking-main-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.back-button:hover {
+  color: #006faf;
+}
+
+.header-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header-text p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.tracking-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-submit {
+  padding: 10px 30px;
+  background-color: #006faf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-submit:hover {
+  background-color: #005a8c;
+}
+
+.placeholder-box {
+  margin-top: 20px;
+  padding: 40px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  color: #999;
+  background-color: #f9f9f9;
+}
+
+.placeholder-box i {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.placeholder-box p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.result-box {
+  margin-top: 20px;
+}
+
+.user-info {
+  padding: 20px;
+  border: 1px solid #006faf;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.user-info div p {
+  margin: 5px 0;
+}
+
+.user-info div #nama {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.user-info div #nomorDO {
+  font-size: 14px;
+  color: #666;
+}
+
+.user-info div #status {
+  font-size: 16px;
+  font-weight: 600;
+  color: #006faf;
+  text-align: right;
+}
+
+.user-info div #tanggalKirim {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+
+.timeline {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #006faf;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline-header {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 15px;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.timeline-marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffa500;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-date {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+.timeline-description {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.add-button i {
+  margin-right: 5px;
+}
